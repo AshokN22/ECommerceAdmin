@@ -14,6 +14,8 @@ import { CustomersComponent } from './customers/customers.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { ReportsComponent } from './reports/reports.component';
 import { UsersComponent } from './users/users.component';
+import {CategoryService} from './Services/category.service';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { UsersComponent } from './users/users.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
